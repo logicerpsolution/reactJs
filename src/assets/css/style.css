@@ -1,0 +1,264 @@
+﻿/*for base font:---- font-family: 'Open Sans', sans-serif;*/
+
+html,body{font-size:14px; color:#656d78;font-family: 'Open Sans', sans-serif;background:#ecf0f5;padding:0}
+*, ::after, ::before {box-sizing: border-box}
+img {max-width: 100%; height: auto; width: auto\9 /* ie8 */}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+img, fieldset {border: 0}
+h1, h2, h3, h4, h5, h6{font-family: 'Raleway', sans-serif}
+.clear{clear:both}
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}
+.clearfix:after{clear:both}
+a {color: #014e87;text-decoration: none}
+a,img,button,select{outline:none  !important}
+a:active,img,button,select{outline:none !important}
+a:hover,a:focus{color: #1b9af7;text-decoration:none !important;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease}
+.small, small {font-size: 85%}
+textarea{resize:none}
+.mt15{margin-top:15px} .mt10{margin-top:10px} .mtb15{margin-top:15px;margin-bottom:15px}
+.mb0{margin-bottom:0} .mb10{margin-bottom:10px} .mb20{margin-bottom:20px}
+.mr5{margin-right:5px}
+.p0{padding:0} .pt23{padding-top:23px} .pt30, .form-pt30{padding-top:30px}
+
+/*buttons ---------*/
+.btn:focus, .btn:hover{box-shadow: 0 0 0 rgba(0,0,0.0)}
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+    100% {top: -12px; right: -12px; bottom: -12px; left: -12px; opacity: 0}
+  }
+  @keyframes hvr-ripple-out {
+    100% {top: -12px; right: -12px; bottom: -12px; left: -12px; opacity: 0}
+  }
+.btn-blue {min-width: 180px;font-size: 15px;color: #ffffff; font-weight: 600;padding: 13px 50px;background: #00ccff;border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0); display: inline-block; position: relative;text-align: center;text-transform: uppercase}
+    .btn-blue:hover, .btn-blue:active, .btn-blue:focus{color:#ffffff}
+    .btn-blue:focus {box-shadow: 0 0 0 3px rgba(0,204,255,.25)}
+.hvr-ripple-out {display: inline-block;vertical-align: middle;-webkit-transform: perspective(1px) translateZ(0);transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;position: relative}
+  .hvr-ripple-out:before {content: '';position: absolute;border: #00ccff solid 6px; top: 0;right: 0;bottom: 0;left: 0;-webkit-animation-duration: 1s;
+    animation-duration: 1s;border-radius:5px}
+  .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {-webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out}
+.range_inputs .applyBtn{background-color: #00ccff; border-color: #00c1f1}
+.range_inputs .applyBtn:hover, .range_inputs .applyBtn:focus{background: #00c1f1;border-color:#02b8e5}
+/*login ----------------*/
+.login-form-wrap{height: 100vh;background: url(/src/assets/images/doctor.jpg)no-repeat;background-size:cover}
+.login-form-wrap .logo{text-align: center}
+.login-form .login-wrapper {background: rgba(255,255,255,0.5); padding:30px 25px;border: 2px solid #ffffff;box-shadow:0 0 8px rgba(0,0,0,0.2)}
+
+/*header -----------------*/
+.header{background: #ffffff;box-shadow: 0 0 5px rgba(0,0,0,0.2)}
+.header .logo img{width:135px}
+.fixed-header{position: fixed;left: 0;right: 0;top: 0;z-index: 9;padding: 10px 15px 8px}
+.left-nav-toggle {float: left; padding: 6px 10px 6px 20px; box-shadow: -1px 0px 0px 0 rgba(0,0,0,0.1);margin-top:5px}
+.left-nav-toggle a{color:#cccccc}
+.left-nav-toggle a:hover, .left-nav-toggle a:focus{color:#00ccff}
+.header .dropdown{display: inline-block;padding-top:4px}
+.header .user-dropdown{background: rgba(0,0,0,0);border:0 none;padding-top: 0px;cursor: pointer}
+.header .dropdown-toggle::after{position: absolute;right:0;top:20px}
+.header .user-dropdown .user-img{width:35px;margin-right:10px;float:left}
+.header .user-dropdown .user-name-email{display: inline-block;text-align: left;padding-right:10px;line-height: 18px}
+.header .user-dropdown .user-name-email p{margin-bottom:0}
+.header .user-dropdown .user-name-email p small{color:#999999}
+.header .dropdown-menu{width:230px;position:absolute;overflow:visible;-moz-border-radius:3px;-webkit-border-radius:0px;border-radius:0px;
+ box-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);z-index:3;top:57px !important;border:0 none;border-top:2px solid #00ccff;margin:0;padding:0;left: unset !important;right: 0}
+.header .dropdown-menu:after{height:0;width:0;bottom:100%;right:48%;border:solid transparent;content: " ";position: absolute;pointer-events: none;border-color: rgba(0, 0, 0, 0);border-bottom-color: #00ccff;border-width: 7px;margin-left: -5px;left:unset}
+.header .dropdown-menu:before{border-width:0}
+.header .dropdown-menu .user-header{background:#00ccff;padding: 15px 10px}
+.header .dropdown-menu .user-header .user-detail{margin-top:15px}
+.header .dropdown-menu .user-header .user-detail h4{font-size: 16px;color:#ffffff}
+.header .dropdown-menu .user-header .user-detail h5{font-size: 13px;color:#ffffff;margin-bottom:0}
+.header .dropdown-item{font-size:13px;border-bottom:1px solid #eeeeee;padding:10px 15px}
+.header .dropdown-item:last-child{border:0 none}
+.header .dropdown-item i{font-size: 14px;padding-right: 10px}
+.header .dropdown-item.active, .header .dropdown-item:active, .header .dropdown-item:hover {color:#ffffff;text-decoration:none;background-color: #01a4cd}
+.animated {-webkit-animation-duration:400ms;animation-duration:400ms;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@keyframes swing {
+  20% {transform: rotate(15deg);}
+  40% {transform: rotate(-10deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+  }
+  @keyframes swing {
+  20% {transform: rotate(15deg);}
+  40% {transform: rotate(-10deg);}
+  60% {transform: rotate(5deg);}
+  80% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+  }
+  .swing {animation-name: swing; transform-origin: center top 0; visibility: visible !important}
+
+.loader{position: relative}
+.loader .loader-wrap{position: fixed;top: 0;left:0;right: 0;bottom: 0;background: #dd5152;z-index: 999;text-align: center}
+.loader .loading-img{position: relative;display: inline-block;max-width:550px;padding: 0 15px;margin:0 auto}
+.loader .loading-img img{width: 100%}
+body.notouch.loader .loader-wrap{display:block}
+body.notouch:not(.loader) .loader-wrap{display:none}
+
+/*sidebar ----------*/
+.page-sidebar {margin-top: 60px; background-color: #3d4a5d; width: 230px; position: fixed; left: 0;bottom: 0;top: 0; transform: translateX(0%);
+  -webkit-transform: translateX(0%);-moz-transform: translateX(0%);-ms-transform: translateX(0%);-o-transform: translateX(0%); transition: all 0.6s ease-out 0s; -webkit-transition: all 0.6s ease-out 0s; -moz-transition: all 0.6s ease-out 0s; -ms-transition: all 0.6s ease-out 0s; -o-transition: all 0.6s ease-out 0s;}
+.x-navigation, .x-navigation ul {width: 100%; padding: 0px; margin: 0px; float: left; list-style: none; display: block;z-index: 3}
+.x-navigation .x-navigation-control {position: absolute;right: 0px;width: 50px;height: 50px;cursor: pointer;display: none}
+.x-navigation .x-navigation-control:hover {background: #00ccff;border-bottom: 0px;border-left: 0}
+.x-navigation .x-navigation-control:before {position: absolute;font-family: "FontAwesome";content: "\f0c9";font-size: 14px;top: 14px;left: 20px;color: #FFF; text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3)}
+.x-navigation.x-navigation-open .x-navigation-control:before {content:"\f00d"}
+.x-navigation li {float: left;display: block;width: 100%;padding: 0px;margin: 0px;position: relative}
+.x-navigation li.active > a,.x-navigation li > a:hover {background: #2b3543;border-left:4px solid #00ccff;color:#ffffff}
+.x-navigation li a {display: block; float: left;width: 100%; color: #b8c7ce;font-size: 13px;font-weight: 400;
+    padding: 13px 10px 13px 15px; text-decoration: none;border-bottom: 1px solid #384557; border-left: 4px solid #3d4a5d}
+.x-navigation li a span, .x-navigation li a i{font-size:20px;margin-right:5px}
+.x-navigation li a span.xn-text{font-size:13px;margin:0}
+.x-navigation > li.xn-openable:before {top: 12px}
+.x-navigation li.xn-openable:before {position: absolute;font-family: "FontAwesome";content: "\f107";font-size: 14px;width: 20px;height: 20px;
+    color: #b8c7ce;right: 0px;top: 12px;cursor: pointer}
+.x-navigation.x-navigation-minimized > li li.active.xn-openable:before {content: "\f104"}
+.x-navigation li.active.xn-openable:before {content: "\f106"}
+.x-navigation li > ul {background: #4b596d;max-height: 0px;-webkit-transition: all 200ms ease; -moz-transition: all 200ms ease; -ms-transition: all 200ms ease; -o-transition: all 200ms ease;transition: all 200ms ease;overflow: hidden}
+.x-navigation li > ul li > a {color: #b8c7ce;font-size: 12px;line-height: 19px;font-weight: 400;padding: 12px 10px;border-bottom-color: #455366}
+.x-navigation li > ul li > a:hover,.x-navigation li > ul li.active > a  {background: #374559;color: #ffffff}
+.x-navigation li.active > a {background: #2b3543;-webkit-transition: all 200ms ease;-moz-transition: all 200ms ease;-ms-transition: all 200ms ease; -o-transition: all 200ms ease;transition: all 200ms ease;border-left: 4px solid #00ccff;color: #fff}
+.x-navigation li.active > ul {max-height: 1200px}
+.x-navigation.x-navigation-minimized li.active > ul {display: block}
+.x-navigation.x-navigation-minimized li {width: auto;position: relative}
+.x-navigation.x-navigation-minimized li ul {top: 0px;right: -230px;-moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1)}
+.x-navigation.x-navigation-minimized li ul:after {right: 100%;top: 23px;border: solid transparent;content: " ";height: 0;width: 0;position: absolute; pointer-events: none;border-color: rgba(0, 0, 0, 0);border-right-color: #33414e;border-width: 5px;margin-top: -5px}
+.x-navigation.x-navigation-minimized li ul li > a {padding-left: 15px !important}
+.x-navigation.x-navigation-minimized li ul li > a:hover {padding-left: 20px !important}
+.x-navigation.x-navigation-minimized li ul li.active > a {padding-left: 20px !important}
+.x-navigation.x-navigation-minimized li ul li:first-child > a {border-radius: 0px}
+.x-navigation.x-navigation-minimized li ul li:last-child > a {border-bottom: 0px;border-radius: 0px}
+.x-navigation.x-navigation-minimized > li {width: 100%}
+.x-navigation.x-navigation-minimized > li > a {padding: 15px 10px;text-align: center}
+.x-navigation.x-navigation-minimized > li > a .fa,.x-navigation.x-navigation-minimized > li > a .glyphicon {margin: 0px}
+.x-navigation.x-navigation-minimized > li ul {width: 220px;position: absolute;overflow: visible;display: none;border-radius: 0px}
+.x-navigation.x-navigation-minimized > li li {width: 100%}
+.x-navigation.x-navigation-minimized > li li.xn-openable:before {content: "\f105"}
+.x-navigation.x-navigation-minimized > li li.active.xn-openable:before {content: "\f104"}
+.x-navigation.x-navigation-minimized > li.active:before,.x-navigation.x-navigation-minimized > li.xn-openable:before {display: none}
+.x-navigation > li > ul > li > a {padding-left: 25px}
+.x-navigation.x-navigation-minimized {width: 65px}
+.x-navigation.x-navigation-minimized .xn-text {display: none}
+.page-container.page-container-wide .page-sidebar {width: 65px;z-index:9}
+/*content-wrapper ---------*/
+.page-content{ -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out; -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out; -o-transition: -o-transform .3s ease-in-out,margin .3s ease-in-out; transition: transform .3s ease-in-out,margin .3s ease-in-out;
+  margin-left: 230px;width: 100%; margin-top: 60px; margin-right: 0}
+.page-container.page-navigation-toggled .page-content, .page-container.page-navigation-toggled-hover .page-content {margin-left: 65px;
+    transform: translateX(0px)}
+
+.card-dark .card-header {background: #3d4a5d;color: #ffffff; border-bottom: 3px solid #00ccff;font-size:16px}
+.card-dark .card-header span{font-size:26px; float: left; margin-right: 10px}
+select.form-control{height: 38px !important;-webkit-appearance: none;-moz-appearance: none;background: #ffffff url(../images/up-down.png) no-repeat; background-position: 98% center}
+.topfilerbar{background:#ffffff;padding:15px; border-bottom: 1px solid rgba(0,0,0,0.07)}
+.page-content-wrap{padding:15px}
+/* daterangepicker */
+.dtrange {height:38px;line-height: 36px;padding: 0px 10px;border: 1px solid #dddddd;border-radius: .25rem;cursor: pointer;text-align: center}
+.dtrange:hover {background-color: #F9F9F9}
+.daterangepicker.dropdown-menu {max-width: none;z-index: 3000;border: 1px solid #D5D5D5}
+.daterangepicker.dropdown-menu:before,.daterangepicker.dropdown-menu:after {display: none}
+.daterangepicker.opensleft .ranges,.daterangepicker.opensleft .calendar {float: left;margin: 4px}
+.daterangepicker.opensright .ranges,.daterangepicker.opensright .calendar {float: right; margin: 4px}
+.daterangepicker .ranges {width: 250px;text-align: left}
+.daterangepicker .ranges .range_inputs > div {float: left}
+.daterangepicker .ranges .range_inputs > div:nth-child(2) {padding-left: 11px}
+.daterangepicker .calendar {display: none;max-width: 270px;width: auto}
+.daterangepicker .calendar th,.daterangepicker .calendar td {white-space: nowrap;text-align: center;min-width: 32px}
+.range_inputs{text-align:center}
+.daterangepicker .ranges label {color: #333;display: block;font-size: 11px;font-weight: normal;height: 20px;line-height: 20px;margin-bottom: 2px;text-shadow: #fff 1px 1px 0px;text-transform: uppercase;width: 74px;text-align:left}
+.daterangepicker .ranges input {font-size: 11px}
+.daterangepicker .ranges .input-mini {background-color: #F5F5F5;border: 1px solid #ccc;border-radius: 4px;color: #555;display: block;font-size: 11px; height: 30px; line-height: 30px;margin: 0 0 10px 0;padding: 0 6px;width: 119px}
+.daterangepicker .ranges ul {list-style: none;margin: 0;padding: 0}
+.daterangepicker .ranges li {font-size: 13px;background: #f5f5f5;border: 1px solid #f5f5f5;color: #656d78;padding: 3px 12px;margin-bottom: 8px;border-radius: 5px;cursor: pointer}
+.daterangepicker .ranges li.active,.daterangepicker .ranges li:hover {background: #33414e;border: 1px solid #33414e;color: #fff}
+.daterangepicker .calendar-date {border: 1px solid #ddd;padding: 4px;border-radius: 0px;background: #fff;font-size:12px;color:#656d78}
+.daterangepicker .calendar-time {text-align: center;margin: 8px auto 0 auto;line-height: 30px}
+.daterangepicker {position: absolute;background: #fff;top: 100px; left: 20px;padding: 4px;margin-top: 1px; border-radius: 0px}
+.daterangepicker table {width: 100%;margin: 0}
+.daterangepicker td,.daterangepicker th {text-align: center;width: 20px;height: 20px; border-radius: 4px;cursor: pointer;white-space: nowrap}
+.daterangepicker td.off {color: #999}
+.daterangepicker td.disabled {color: #999}
+.daterangepicker td.available:hover,.daterangepicker th.available:hover {background: #D5D5D5}
+.daterangepicker td.in-range {background: #dfe1e4;border-radius: 0}
+.daterangepicker td.active,.daterangepicker td.active:hover {background-color: #656d78;border-color: #656d78;color: #fff}
+.daterangepicker td.week,.daterangepicker th.week {font-size: 80%;color: #ccc}
+.daterangepicker select.monthselect,.daterangepicker select.yearselect {font-size: 12px;padding: 1px;height: auto;margin: 0;cursor: default}
+.daterangepicker select.monthselect {margin-right: 2%;width: 56%}
+.daterangepicker select.yearselect {width: 40%}
+.daterangepicker select.hourselect,.daterangepicker select.minuteselect,.daterangepicker select.ampmselect {width: 50px;margin-bottom: 0}
+/* eof daterangepicker */
+.topfilerbar .row [class*="col-"]{box-shadow:1px 0 0 rgba(0,0,0,0.05)}
+.topfilerbar .row .col-sm-4:last-child{box-shadow:0 0 0}
+/* DROP DOWN */
+.dropdown-menu {font-size: 13px;-moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);border: 1px solid #E5E5E5;padding: 0px; margin: 1px 0px 0px; min-width: 200px}
+.dropdown-menu > li > a {padding: 8px 15px; border-bottom: 1px solid #E9E9E9; line-height: 20px; display: block; white-space: nowrap; clear: both;color: #656d78}
+.dropdown-menu > li:last-child > a {border-bottom: 0px}
+.dropdown-header {padding: 10px 15px;border-bottom: 1px solid #E5E5E5;color: #777}
+.dropdown-menu .fa {margin-right: 5px}
+.dropdown-menu .divider {background: #F5F5F5;margin: 0px;padding: 15px 0px 0px;border-bottom: 1px solid #E5E5E5}
+/* EOF DROP DOWN */
+/* BOOTSTRAP SELECT */
+.bootstrap-select {width: 220px \0}
+.bootstrap-select > .btn {width: 100%;padding-right: 25px; box-shadow: 0 0 0;height:38px;color: #656d78}
+.error .bootstrap-select .btn {border: 1px solid #b64645}
+.bootstrap-select.fit-width {width: auto !important}
+.bootstrap-select.btn-group:not(.input-group-btn),.bootstrap-select.btn-group[class*="span"] {float: none;display: inline-block;margin-bottom: 0px;
+  margin-left: 0}
+.form-search .bootstrap-select.btn-group,.form-inline .bootstrap-select.btn-group,.form-horizontal .bootstrap-select.btn-group {margin-bottom: 0}
+.bootstrap-select.form-control {margin-bottom: 0;padding: 0;border: none;position:relative}
+.bootstrap-select.btn-group.pull-right,.bootstrap-select.btn-group[class*="span"].pull-right,.row-fluid .bootstrap-select.btn-group[class*="span"].pull-right {
+  float: right}
+.input-append .bootstrap-select.btn-group {margin-left: -1px}
+.input-prepend .bootstrap-select.btn-group {margin-right: -1px}
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {width: 220px}
+.bootstrap-select.form-control:not([class*="span"]) {width: 100%}
+.bootstrap-select.show-menu-arrow.open > .btn {z-index: 2051}
+.bootstrap-select.btn-group .btn .filter-option {display: inline-block;overflow: hidden;width: 100%;text-align: left}
+.bootstrap-select.btn-group .btn .caret {position: absolute;top: 50%;right: 12px;margin-top: -2px;vertical-align: middle}
+.bootstrap-select.btn-group > .disabled,.bootstrap-select.btn-group .dropdown-menu li.disabled > a {cursor: not-allowed}
+.bootstrap-select.btn-group > .disabled:focus {outline: none !important}
+.bootstrap-select.btn-group[class*="span"] .btn {width: 100%}
+.bootstrap-select.btn-group .dropdown-menu {min-width: 100%;z-index: 2000;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+.bootstrap-select.btn-group .dropdown-menu.inner {position: static;border: 0;padding: 0;margin: 0;-moz-border-radius: 0px;-webkit-border-radius: 0px;
+  border-radius: 0px;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;display:block;max-height: 221px !important}
+.bootstrap-select.btn-group .dropdown-menu dt {display: block;padding: 3px 20px;cursor: default}
+.bootstrap-select.btn-group .div-contain {overflow: hidden}
+.bootstrap-select.btn-group .dropdown-menu li {position: relative}
+.bootstrap-select.btn-group .dropdown-menu li > a.opt {position: relative;padding-left: 35px}
+.bootstrap-select.btn-group .dropdown-menu li > a {cursor: pointer}
+.bootstrap-select.btn-group .dropdown-menu li > dt small {font-weight: normal}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark {position: absolute; display: inline-block;right: 15px;margin-top: 11px;
+  font-size: 11px}
+.bootstrap-select.btn-group .dropdown-menu li a i.check-mark {display: none}
+.bootstrap-select.btn-group .dropdown-menu li a span.text {display: inline-block}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {margin-right: 34px}
+.bootstrap-select.btn-group .dropdown-menu li small {padding-left: 0.5em}
+.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:hover small,.bootstrap-select.btn-group .dropdown-menu li:not(.disabled) > a:focus small,
+.bootstrap-select.btn-group .dropdown-menu li.active:not(.disabled) > a small {color: #64b1d8;color: rgba(100, 177, 216, 0.4)}
+.bootstrap-select.btn-group .dropdown-menu li > dt small {font-weight: normal}
+.bootstrap-select.show-menu-arrow .dropdown-toggle:before {content: '';border-left: 7px solid transparent;border-right: 7px solid transparent;  border-bottom-width: 7px; border-bottom-style: solid; border-bottom-color: #cccccc; border-bottom-color: rgba(204, 204, 204, 0.2); position: absolute;
+  bottom: -4px; left: 9px;display: none}
+.bootstrap-select.show-menu-arrow .dropdown-toggle:after {content: '';border-left: 6px solid transparent;border-right: 6px solid transparent;border-bottom: 6px solid white;position: absolute;bottom: -4px;left: 10px;display: none}
+.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:before {bottom: auto;top: -3px;border-bottom: 0;border-top-width: 7px;border-top-style: solid;
+  border-top-color: #cccccc;border-top-color: rgba(204, 204, 204, 0.2)}
+.bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:after {bottom: auto;top: -3px;border-top: 6px solid #FFFFFF;border-bottom: 0}
+.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:before {right: 12px;left: auto}
+.bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:after {right: 13px;left: auto}
+.bootstrap-select.show-menu-arrow.open > .dropdown-toggle:before,.bootstrap-select.show-menu-arrow.open > .dropdown-toggle:after {display: block}
+.bootstrap-select.btn-group .no-results {padding: 8px;background: #f5f5f5;border-top: 1px solid #E5E5E5;margin-top: 5px}
+.bootstrap-select.btn-group .dropdown-menu .notify {position: absolute;bottom: 5px;width: 96%;margin: 0 2%;min-height: 26px;padding: 3px 5px;background: #f5f5f5; border: 1px solid #e3e3e3; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); pointer-events: none; opacity: 0.9; -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; box-sizing: border-box}
+.bootstrap-select.btn-group.fit-width .btn .filter-option {position: static}
+.bootstrap-select.btn-group.fit-width .btn .caret {position: static;top: auto;margin-top: -1px}
+.control-group.error .bootstrap-select .dropdown-toggle {border-color: #b94a48}
+.bootstrap-select-searchbox,.bootstrap-select .bs-actionsbox {padding: 4px 8px}
+.bootstrap-select .bs-actionsbox {float: left; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box}
+.bootstrap-select .bs-actionsbox .btn-group button {width: 50%}
+.bootstrap-select-searchbox + .bs-actionsbox {padding: 0 8px 4px}
+.bootstrap-select-searchbox input {margin-bottom: 0}
+.mobile-device {position: absolute;top: 0;left: 0;display: block !important;width: 100%;height: 100% !important;opacity: 0}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {color: #262626;text-decoration: none; background-color: #f5f5f5}
+.btn-default {border-color: #DDD;background:#ffffff}
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open > .dropdown-toggle.btn-default {background-color: #F5F5F5;border-color: #DDD}
+/* EOF BOOTSTRAP SELECT */

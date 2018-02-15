@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1024px) 
+{
+	.page-container .page-sidebar {position: relative;float: left;width: 100%}
+	.x-navigation > li.xn-navigation-control {display: block}
+    .x-navigation.x-navigation-open {max-height: 1200px;overflow: visible}
+	.x-navigation .x-navigation-control {display: block;position:relative;background: #25313c;border-bottom: 0;border-left: 0;float: right}
+	.page-container .page-content {margin: 0px}
+	.x-navigation {max-height: 50px;overflow: hidden;background: #33414e}
+    .x-navigation.x-navigation-panel {height: 50px;max-height: auto;overflow: visible}
+	.left-nav-toggle{display:none}
+}
+@media screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 736px) {
+    .md-card .md-card-content.large-padding{padding:20px 15px}
+}
+@media only screen and (max-width:992px)
+{
+    
+}
+@media only screen and (max-width: 767px){
+	.dtrange{padding: 0px 0px;font-size: 13px;overflow: hidden}
+}
+@media only screen and (max-width:575px){
+    .md-card .md-card-content.large-padding{padding:20px 15px}
+    .login_page .login_heading .logo img{width:150px}
+    .md-card{margin:0 15px}
+    #password_reset_show{float: none;margin-bottom: 8px;text-align: center;display: block}
+    .header .user-dropdown .user-name-email p small{display:none}
+	.header .user-dropdown .user-name-email p{padding-top:10px}
+	.topfilerbar .row [class*="col-"]{margin-bottom:10px}
+	.topfilerbar .row .col-sm-4:last-child{margin-bottom:0}
+}
+@media only screen and (max-width: 400px){
+	.header .user-dropdown .user-name-email p{display:none}
+	.header .user-dropdown .user-img{margin-right:0}
+	.header .dropdown-menu::after{right:5%}
+}
+@media screen and (orientation:portrait) and (max-width:480px) {
+    
+}
